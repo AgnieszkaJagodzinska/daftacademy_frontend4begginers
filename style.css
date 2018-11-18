@@ -1,0 +1,64 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+    font-family: Opensans, Helvetica;
+    background-color: #25072e;
+}
+    h1 {
+    color: #ec008c;
+font-size: 28px;
+font-style: bold; 
+}
+
+h2 {
+    color: #ec008c;
+    font-size: 15px;
+    font-style: bold;
+}
+
+   .page-header  {
+       width: 158px;
+       height: 44px;
+       position: top, left;
+       position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  left: 10px;}
+
+  .social-links {
+    position: -webkit-sticky;
+    position: sticky;
+    position: bottom, left;
+    top: 550px;
+    left: 10px;
+    position: bottom, left;}
+
+.content-section {
+    position:static;
+    width: 100%;
+   min-height: 1080px;
+}
+
+.band-members__item {
+    position: relative;
+    top: 0px;
+    left: 200px;
+
+
+}
+.band-members__image {
+    float: left;
+    margin-right: 30px;
+}
+
+
+
+  
+  
+
+
+
+   
+
+    

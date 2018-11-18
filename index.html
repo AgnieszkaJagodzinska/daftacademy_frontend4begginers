@@ -3,45 +3,92 @@
     <head>
         <title>Strona zespołu 6BM</title>   
         <meta charset="UTF-8" />
+        <link rel="stylesheet" href='style.css'>
     </head>
     <body>
-<body bgcolor="#25072e"></body>
+            <header class="page-header">
+            <h1 class="page-brand">
+                <img src="logo.png" alt="logo" /> </h1>
+                <nav class="page-navigation">
+                <ul class="page-navigation__items">
+                    <li class="page-navitagion__item">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="page-navitagion__item">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-navitagion__item">
+                        <a href="#concerts">Concerts</a>
+                    </li>
+                    <li class="page-navitagion__item">
+                        <a href="#video">Video</a>
+                    </li>
+                    <li class="page-navitagion__item">
+                        <a href="#photos">Photos</a>
+                    </li>
+                    <li class="page-navitagion__item">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+                <ul class="social-links">
+                    <li class="social-links__item">
+                        <a class="social-links__link" href="http://facebook.com/"> <img src="fb.svg"/> </a> 
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__link" href="http://instagram.com/"><img src="insta.svg"/></a>
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__link" href="http://last.fm/"><img src="last.svg"/></a>
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__link" href="http://youtube.com/"><img src="yout.svg"/></a>
+                    </li>
+                </ul>
 
-            <img src="logo.png" alt="logo zespołu" />
-    <br>
-            <nav>
-            <div class="page content">
-                    <div id="section-main" class="page-content__section">H O M E</div> <br>
-                    <div id="section-about" class="page-content__section">A B O U T</div> <br>
-                    <div id="section-concerts" class="page-content__section">C O N C E R T S</div> <br>
-                    <div id="section-video" class="page-content__section">V I D E O</div> <br>
-                    <div id="section-photos" class="page-content__section">P H O T O S</div> <br> 
-                    <div id="section-contact" class="page-content__section">C O N T A C T</div> <br> 
-</div>
-</nav>
-<div>
-                <img src="band-member01.png" alt="Kamil Zgondek - keys" /> 
-                    <p> K A M I L   Z G O N D E K</p>
-                    <p> K e y b o a r d</p> 
-                <img src="band-member02.png" alt="Łukasz Furman - vocals" />
-                    <p> Ł U K A S Z   F U R M A N</p>
-                    <p>V o c a l s</p> 
-                <img src="band-member03.png" alt="Kamil Majewski - drums" />
-                    <p> K A M I L   M A J E W S K I</p>
-                    <p>D r u m s</p> 
-                <img src="band-member04.png" alt="Daniel Cajzer - Bass Guitar" />
-                    <p>D A N I E L   C A J Z E R</p>
-                    <p>B a s s  G u i t a r</p>      
-                
+        <main class="page-content">
+                <section id="home" class="content-section">
+                    <div class="page content">
+                    <div id="section-main" class="page-content__section">
+                        <h2 class="content-section__header screen-reader-only"></h2>
+                        <ul class="band-members">
+                                <li class="band-members__item">
+                                    <img class="band-members__image" src="band-member01.png" alt="Kamil Zgondek" />
+                                    <p class="band-members__name">Kamil Zgondek</p>
+                                    <p class="band-members__desc">Keyboard</p>
+                                </li>
+                                <li class="band-members__item">
+                                    <img class="band-members__image" src="band-member02.png" alt="Łukasz Furman" />
+                                    <p class="band-members__name">Łukasz Furman</p>
+                                    <p class="band-members__desc">Vocals</p>
+                                </li>
+                                <li class="band-members__item">
+                                    <img class="band-members__image" src="band-member03.png" alt="Kamil Majewski" />
+                                    <p class="band-members__name">Kamil Majewski</p>
+                                    <p class="band-members__desc">Drums</p>
+                                </li>
+                                <li class="band-members__item">
+                                    <img class="band-members__image" src="band-member04.png" alt="Daniel Cajzer" />
+                                    <p class="band-members__name">Daniel Cajzer</p>
+                                    <p class="band-members__desc">Bass guitar</p>
+                                </li>
+                            </ul>
+            
                 </div>
-                <div>
-            <img src="fb.svg" alt="Facebook" width="25" height="25"/> </div>
-        <div>   <img src="insta.svg" alt="Instagram" width="25" height="25"/> </div> 
-         <div>  <img src="last.svg" alt="Last.fm" width="25" height="25"/> </div> 
-        <div>    <img src="yout.svg" alt="Youtube" width="25" height="25" /> </div>
+            
+                 </section>  
 
-        <h1>A B O U T</h1>
+                 </main>
+        
+        
+        <section id="about" class="content-section about-section">
+                <div id="section-main" class="page-content__section">
+                <h2 class="content-section__header">About</h2>
+
         <img src="band01.jpg" alt="Zespół"/>
+        
         <article>STRAIGHT FROM LUBLIN
          <p> 6BM is a young band which has it's <br> origins in the city of Lublin, playing music <br>
             described as electrorock. <br>
@@ -51,7 +98,13 @@
         even drum'n'bass.<br> As for now they released their debut EP - <br> TRINITY and they started
     working on their <br> first full lenght album.</p>
         </article>
-        <h1> C O N C E R T S</h1>
+        </div>
+        </section>
+
+        <section id="concerts" class="content-section concerts-section">
+                <div id="section-main" class="page-content__section">
+            <h2 class="content-section__header">Concerts</h2>   
+
         <img src="band02_WiechnikMarcin.jpg" width="350" height="250"/>
         <p>20.12.2018</p>
         <p> Lublin, klub XXX</p>
@@ -68,11 +121,21 @@
         <p>20.12.2018</p>
         <p>Poznań, klub AAA</p>
         <button> Buy ticket</button>
+    </div>
+</section>
 
-        <h1> V I D E O</h1>
+<section id="video" class="content-section video-section">
+        <div id="section-main" class="page-content__section">
+    <h2 class="content-section__header">Video</h2>
         <iframe width="1000" height="500" src="https://www.youtube.com/embed/AstRXh-vKNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    </section>
 
-        <h1>P H O T O S</h1>
+
+        <section id="photos" class="content-section photos-section">
+                <div id="section-main" class="page-content__section">
+            <h2 class="content-section__header">Photos</h2>
+
         <img src="band05_JakubBodys.jpg" width="250" height="170" />
         <img src="band06_JakubBodys.jpg"  width="250" height="170"/>
         <img src="band07.jpg"  width="250" height="170"/> <br>
@@ -82,8 +145,12 @@
         <img src="band11.jpg"  width="250" height="170"/>
         <img src="band04_JakubBodys.jpg" width="250" height="170" />
         <img src="band03_WiechnikMarcin.jpg" width="250" height="170"  />
+                </div>
+</section>
 
-        <h1>C O N T A C T</h1>
+<section id="contact" class="content-section contact-section">
+        <div id="section-main" class="page-content__section">
+    <h2 class="content-section__header">Contact</h2>
 
         <img src="band12.jpg" />
 
@@ -100,6 +167,9 @@
             <br/>
             <button type="submit">CONTACT US! </button>
             </form>
+        </div>
+</section>
+
 
     </body>
 </html>
