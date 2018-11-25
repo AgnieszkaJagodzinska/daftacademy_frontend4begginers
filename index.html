@@ -4,56 +4,48 @@
         <title>Strona zespołu 6BM</title>   
         <meta charset="UTF-8" />
         <link rel="stylesheet" href='style.css'>
-    </head>
+           </head>
     <body>
-            <header class="page-header">
+        <div class="bgc-image" src="bg_full.svg"></div>
+        
+            <header class="page-header"> 
+                    
             <h1 class="page-brand">
+                    
                 <img src="logo.png" alt="logo" /> </h1>
+                
                 <nav class="page-navigation">
                 <ul class="page-navigation__items">
-                    <li class="page-navitagion__item">
+                    <li class="page-navigation__item">
                         <a href="#home">Home</a>
                     </li>
-                    <li class="page-navitagion__item">
+                    <li class="page-navigation__item">
                         <a href="#about">About</a>
                     </li>
-                    <li class="page-navitagion__item">
+                    <li class="page-navigation__item">
                         <a href="#concerts">Concerts</a>
                     </li>
-                    <li class="page-navitagion__item">
+                    <li class="page-navigation__item">
                         <a href="#video">Video</a>
                     </li>
-                    <li class="page-navitagion__item">
+                    <li class="page-navigation__item">
                         <a href="#photos">Photos</a>
                     </li>
-                    <li class="page-navitagion__item">
+                    <li class="page-navigation__item">
                         <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
         </header>
-        
-                <ul class="social-links">
-                    <li class="social-links__item">
-                        <a class="social-links__link" href="http://facebook.com/"> <img src="fb.svg"/> </a> 
-                    </li>
-                    <li class="social-links__item">
-                        <a class="social-links__link" href="http://instagram.com/"><img src="insta.svg"/></a>
-                    </li>
-                    <li class="social-links__item">
-                        <a class="social-links__link" href="http://last.fm/"><img src="last.svg"/></a>
-                    </li>
-                    <li class="social-links__item">
-                        <a class="social-links__link" href="http://youtube.com/"><img src="yout.svg"/></a>
-                    </li>
-                </ul>
-
+                  
         <main class="page-content">
                 <section id="home" class="content-section">
+                        
                     <div class="page content">
                     <div id="section-main" class="page-content__section">
-                        <h2 class="content-section__header screen-reader-only"></h2>
+                        <h1 class="content-section__header screen-reader-only"></h1>
                         <ul class="band-members">
+                                
                                 <li class="band-members__item">
                                     <img class="band-members__image" src="band-member01.png" alt="Kamil Zgondek" />
                                     <p class="band-members__name">Kamil Zgondek</p>
@@ -75,9 +67,9 @@
                                     <p class="band-members__desc">Bass guitar</p>
                                 </li>
                             </ul>
-            
+            </div>
                 </div>
-            
+                
                  </section>  
 
                  </main>
@@ -85,92 +77,146 @@
         
         <section id="about" class="content-section about-section">
                 <div id="section-main" class="page-content__section">
-                <h2 class="content-section__header">About</h2>
+                <h1 class="content-section__header">About</h1>
 
-        <img src="band01.jpg" alt="Zespół"/>
-        
-        <article>STRAIGHT FROM LUBLIN
-         <p> 6BM is a young band which has it's <br> origins in the city of Lublin, playing music <br>
-            described as electrorock. <br>
-            Band members aim to convey emotions, <br> reflexion but also hope</p>
-
-        <p>They are inspired by various genres, like:<br> alternative rock, nu-metal, synthwave or<br>
-        even drum'n'bass.<br> As for now they released their debut EP - <br> TRINITY and they started
-    working on their <br> first full lenght album.</p>
-        </article>
+                <img class="band-image" img src="band01.jpg" alt="Image of band members standing at the construction site" />
+                <div class="about-section__desc">
+                    <h3 class="about-section_desc-header">Straight from Lublin</h3>
+                    <p class="about-section__desc-header">
+                        6BM is a young band which has it's origins in the city of Lublin, playing music described as electrorock.<br/>
+                        Band members aim to convey emotions, reflexion but also hope.<br/><br/>
+                        They are inspired by various genres, like: alternative rock, nu-metal, synthwave or even drum'n'bass.<br/>
+                        As for now they released their debut EP - TRINITY and they started working on their first full length album.
+                    </p>
+                </div>
         </div>
         </section>
 
         <section id="concerts" class="content-section concerts-section">
                 <div id="section-main" class="page-content__section">
-            <h2 class="content-section__header">Concerts</h2>   
+            <h1 class="content-section__header">Concerts</h1>   
 
-        <img src="band02_WiechnikMarcin.jpg" width="350" height="250"/>
-        <p>20.12.2018</p>
-        <p> Lublin, klub XXX</p>
-        <button> Buy ticket</button> <br>
-        <img src="band03_WiechnikMarcin.jpg" width="350" height="250"/>
-        <p>20.12.2018</p>
-        <p>Warszawa, klub YYY</p>
-        <button> Buy ticket</button> <br>
-        <img src="band04_JakubBodys.jpg" width="350" height="250"/>
-        <p>20.12.2018</p>
-        <p>Kraków, klub ZZZ</p>
-        <button> Buy ticket</button> <br>
-        <img src="band05_JakubBodys.jpg" width="350" height="250"/>
-        <p>20.12.2018</p>
-        <p>Poznań, klub AAA</p>
-        <button> Buy ticket</button>
-    </div>
+            <div class="concerts">
+                    <article class="concerts__item">
+                        <img class="concerts__image" src="band02_WiechnikMarcin.jpg" alt="Image of band drummer during a concert" />
+                        <header class="concerts__info">
+                            <p class="concerts__date">20.12.2018</p>
+                            <p class="concerts__location">Lublin, klub XXX</p>
+                            <button class="button">Buy a ticket</button>
+                        </header>
+                    </article>
+                    <article class="concerts__item">
+                        <img class="concerts__image" src="band03_WiechnikMarcin.jpg" alt="Image of band vocalist and keyboard player during a concert" />
+                        <header class="concerts__info">
+                            <p class="concerts__date">20.12.2018</p>
+                            <p class="concerts__location">Warszawa, klub YYY</p>
+                            <button class="button">Buy a ticket</button>
+                        </header>
+                    </article>
+                    <article class="concerts__item">
+                        <img class="concerts__image" src="band04_JakubBodys.jpg" alt="Image of band keyboard player during a concert" />
+                        <header class="concerts__info">
+                            <p class="concerts__date">20.12.2018</p>
+                            <p class="concerts__location">Kraków, klub ZZZ</p>
+                            <button class="button">Buy a ticket</button>
+                        </header>
+                    </article>
+                    <article class="concerts__item">
+                        <img class="concerts__image" src="band05_JakubBodys.jpg" alt="Image of band vocalist during a concert" />
+                        <header class="concerts__info">
+                            <p class="concerts__date">20.12.2018</p>
+                            <p class="concerts__location">Poznań, klub AAA</p>
+                            <button class="button">Buy a ticket</button>
+                        </header>
+                    </article>
 </section>
 
 <section id="video" class="content-section video-section">
         <div id="section-main" class="page-content__section">
-    <h2 class="content-section__header">Video</h2>
-        <iframe width="1000" height="500" src="https://www.youtube.com/embed/AstRXh-vKNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h1 class="content-section__header">Video</h1>
+    <iframe width="1000" height="500" src="https://www.youtube.com/embed/AstRXh-vKNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     </section>
 
 
         <section id="photos" class="content-section photos-section">
                 <div id="section-main" class="page-content__section">
-            <h2 class="content-section__header">Photos</h2>
+            <h1 class="content-section__header">Photos</h1>
 
-        <img src="band05_JakubBodys.jpg" width="250" height="170" />
-        <img src="band06_JakubBodys.jpg"  width="250" height="170"/>
-        <img src="band07.jpg"  width="250" height="170"/> <br>
-        <img src="band08.jpg"  width="250" height="170"/>
-        <img src="band09.jpg"  width="250" height="170"/>
-        <img src="band10.jpg"  width="250" height="170"/> <br>
-        <img src="band11.jpg"  width="250" height="170"/>
-        <img src="band04_JakubBodys.jpg" width="250" height="170" />
-        <img src="band03_WiechnikMarcin.jpg" width="250" height="170"  />
-                </div>
+            <ul class="gallery">
+                    <li class="gallery__item">
+                        <img class="gallery__image" src="band05_JakubBodys.jpg" alt="Image of band vocalist during a concert" />
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__image" src="band06_JakubBodys.jpg" alt="Image of band drummer during a concert" />
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__image" src="band07.jpg" alt="Image of band members at the construction site" />
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__image" src="band08.jpg" alt="Image of band members posing against the wall with graffiti" />
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__image" src="band09.jpg" alt="Image of band members standing in the shadows" />
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__image" src="band10.jpg" alt="Image of band members standing at the construction site" />
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__image" src="band11.jpg" alt="Image of band vocalist during a concert" />
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__image" src="band04_JakubBodys.jpg" alt="Image of band keyboard player during a concert" />
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__image" src="band03_WiechnikMarcin.jpg" alt="Image of band vocalist and keyboard player during a concert" />
+                    </li>
+                </ul>
 </section>
 
 <section id="contact" class="content-section contact-section">
         <div id="section-main" class="page-content__section">
-    <h2 class="content-section__header">Contact</h2>
+    <h1 class="content-section__header">Contact</h1>
 
-        <img src="band12.jpg" />
-
-       <span> <p>Tel: 00 48 999 00 00 <br> </span>
-        e- mail: 6bmband@mail.mail </p>
-
-        <form action="" method="GET">
-            <label for="E-mail">E-mail</label>
-            <input id="e-mail"/>
-        <br/>
-        <label for="Topic">Topic</label>
-            <input id="topic"/>
-            <br/>
-            <br/>
-            <button type="submit">CONTACT US! </button>
-            </form>
+    <img class="gallery_image" src="band12.jpg" alt="Image of band members posing next to a train" />
+    <address class="address">
+        Tel: 123 456 789<br/>
+        E-mail: 6bmmusic@gmail.com
+    </address>
+    <form class="form">
+        <div class="form__field">
+            <label class="form__label" for="email">E-mail</label>
+            <input class="form__input" type="email" name="email" id="email" required />
+        </div>
+        <div class="form__field">
+            <label class="form__label" for="topic">Topic</label>
+            <input class="form__input" type="text" name="topic" id="topic" required />
+        </div>
+        <div class="form__field">
+            <button class="button" type="submit">Contact us!</button>
+        </div>
+    </form>
         </div>
 </section>
-
-
+</main> 
+<footer class="page-footer">
+        
+        <h2 class="screen-reader-only"></h2>
+        <ul class="social-links">
+                <li class="social-links__item">
+                    <a class="social-links__link" href="http://facebook.com/"> <img src="fb.svg"/> </a> 
+                </li>
+                <li class="social-links__item">
+                    <a class="social-links__link" href="http://instagram.com/"><img src="insta.svg"/></a>
+                </li>
+                <li class="social-links__item">
+                    <a class="social-links__link" href="http://last.fm/"><img src="last.svg"/></a>
+                </li>
+                <li class="social-links__item">
+                    <a class="social-links__link" href="http://youtube.com/"><img src="yout.svg"/></a>
+                </li>
+            </ul>
+    </footer>
     </body>
 </html>
 
