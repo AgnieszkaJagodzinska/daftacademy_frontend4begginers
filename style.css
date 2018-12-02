@@ -2,10 +2,11 @@ body {
     margin: 0 auto;
     padding: 0;
     max-width: 100%;
-    font-family: Opensans, Helvetica;
+    font-family: 'Open Sans', sans-serif;
     background-color: #25072e;
     background-image: url("bg_full.svg");;
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -16,6 +17,7 @@ font-weight: bold;
 letter-spacing: 4.5px;
 text-align: right;
 text-transform: uppercase;
+margin-right: 100px;
 }
 
 h2 {
@@ -32,26 +34,59 @@ h3 {
     text-transform: uppercase;
     opacity: 0.8;
     position: relative;
-    left: 530px;
-    bottom: 280px;
     background-color: #25072e;
     opacity: 1;
     width: 350px;
     height: 25px;
+    margin-bottom: 30px;
+        color: #CCC8FF;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        top: -250px;
+        left: -270px;
     ;
+}
+.page-content {
+    margin-left: 220px;
+    padding: 0 10%;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 100vh;
+}
+
+.content-section__header {
+    margin-bottom: 60px;
+    color: #EF008E;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 4.5px;
+    text-transform: uppercase;
+}
+
+.content-section__body {
+    flex-grow: 1;
 }
 
 .band-members{
     display: flex;
     height: 230px;
 }
-.band-members__image{
-    margin-top: 200px;
-    padding: 5px;
-    position: relative;
-    left: 300px;
-    }
 
+    .content-section.home-section {
+        align-items: center;
+    }
+    
+    .band-members {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
    .page-header  {
     position: top, left;
     position: fixed;
@@ -66,16 +101,10 @@ h3 {
 
 .content-section {
     position:static;
-    width: 100%;
+   max-width: 100%;
    min-height: 100vh;
 }
-.page content {
 
-    display: flex;
-    position: relative;
-    top: 0px;
-    left: 200px;
-}
 
 .page-navigation__items{
     font: Helvetica;
@@ -118,7 +147,7 @@ font-weight: bold;
     
 }
 .band-members__name{
-    font: OpenSans; 
+     
 color: #ccc8ff;
 font-size: 15px;
 font-weight: bold;
@@ -134,6 +163,10 @@ left: 320px;
     position: relative;
     left: 320px;
 }
+.band-members__name,
+.band-members__desc {
+    display: none;
+}
 
 .page-navigation__item{
     list-style-type: none;
@@ -144,83 +177,124 @@ left: 320px;
 }
 .social-links__link{
     height: 15px;
-    width: 15px;
+  max-width: 15px;
 }
 
-  .about-section__desc-header{
-      color: #ccc8ff;
-      font-size: 13px;
-      font-style: normal;
-      opacity: 0.5;
-    position: relative;
-    left: 530px;
-    bottom: 300px;
-    background-color: #25072e;
-    opacity: 1;
-    width: 350px;
-    height: 300px;
-text-align: left;
-  }
-
-      .band-image {
-          display: flex;
-          margin-top: 50px;
-position: relative;
-left: 800px;
-height: 450px;
-width: 650px;
-      }
-
-      .concerts{
-          display:flex;
-          flex: wrap-reverse;
-      }
-
-.concerts__date{
-    color: #ccc88f;
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 3.8px;
-    text-transform: uppercase;
-    opacity: 0.8;
-}
-.concerts__location{
+.about-section__desc-header{
     color: #ccc8ff;
-      font-size: 13px;
-      font-style: normal;
-      opacity: 0.5;
-    letter-spacing: 1px;
+    font-size: 13px;
+    font-style: normal;
+    opacity: 0.5;
+  position: relative;
+  background-color: #25072e;
+  opacity:1 ;
+ max-width: 350px;
+  height: 300px;
+text-align: left;
+top: -285px;
+left: -270px;
+border-bottom: 3px solid #ef008e;
 }
-.gallery{
-    position: relative;
-    top: 100px;
-    left: 300px;
-    display:flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    flex-direction: row;
 
+  
+      .about {
+        position: relative;
+        margin-left: 290px;
+        margin-bottom: 115px;
+    }
     
-}
-      .concerts__image{
-    position: relative;
-    width:350px;
-    height: 250px;
-    left: 00px;
-padding: 20px;
-display: flex;
-flex-wrap: wrap;
+    .band-image {
+        max-width: 100%;
+        border-top: 3px solid #EF008E;
+        margin-right: 100px;
+        height: 60vh;
+    }
+    
+    
+    .about-sections__desc {
+        position: absolute;
+        left: -290px;
+        bottom: -130px;
+       max-width: 380px;
+        padding: 30px;
+        background-color: #25072e;
+        border-bottom: 3px solid #EF008E;
     }
 
-      .gallery__item{
-          list-style-type: none;
-      }
-      .gallery__image{
-        border-top: 10px #ef008e;
-height: 170px;
-width: 250px;
-padding: 10px;
-      }
+    .concerts {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    
+    .concerts__item {
+        flex: row;
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        padding: 0 0 45px 55px;
+    }
+    
+    .concerts__image {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        height: 30vh;
+        border-bottom: 3px solid #EF008E;
+    }
+    
+    .concerts__info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 10px;
+        color: #ccc8ff;
+        opacity: 0.5;
+    }
+    
+    .concerts__info-base {
+        flex-grow: 1;
+    }
+    
+    .concerts__date {
+        margin: 0;
+        color: #CCC8FF;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 3.8px;
+    }
+    
+    .concerts__location {
+        margin: 0;
+        letter-spacing: 3.8px;
+    }
+    
+    .embedded-video {
+        border-top: 3px solid #EF008E;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        width: 80%;
+justify-content: flex-end;
+align-items: flex-end;
+    }
+    
+    .gallery__item {
+        flex-basis: 33.3%;
+        padding: 0 0 20px 20px;
+        list-style-type: none;
+    }
+    
+    .gallery__image {
+        max-width: 100%;
+        height: 20vh;
+        border-top: 3px solid #EF008E;
+    }
+
       address{
         color: #ccc8ff;
         font-size: 13px;
@@ -241,33 +315,65 @@ padding: 10px;
 
 
 .button{
-   text-decoration: none;
-    text-align: center;
-    color: #ccc8ff;
-    background-color: #25072e;
-    opacity: 0.5;
-    font-weight: bold;
-    border: none;
-    opacity: 0.8;
-    width: 120px;
-    height: 25px;
-    display: inline-block;
+    padding: 7px 15px;
+    border-radius: 3px;
+    background-color: rgba(204, 200, 255, 0.1);
+    border-color: rgba(204, 200, 255, 0.1);
+
+    color: rgba(204, 200, 255, 0.8);
+    font-size: 12px;
+    font-weight: 600;
     text-transform: uppercase;
+    letter-spacing: 1.6px;
+    cursor: pointer;
+}
+
+.form__field {
+    margin-bottom: 10px;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 9px;
+}
+
+.form__input {
+    display: block;
+    height: 35px;
+   max-width: 300px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(219, 216, 251, 0.1);
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .gallery_image{
-  margin-left: 500px;
-    margin-top: 100px;
-  box-shadow: black;
+    max-width: 100%;
+    align-items: center;
+    margin-right: 500px;
 }
-  .form__field{
-      margin-left: 550px;
-  }
-  .address{
-      margin-left: 1100px;
-  }
 
+.contact__address {
+    padding: 70px;
+    font-style: normal;
+    margin-left: 300px;
+}
 
+.contact__form {
+    flex-basis: 50%;
+    padding-top: 40px;
+}
+
+.contact__form .button {
+    margin-top: 20px;
+}
 
 
 
